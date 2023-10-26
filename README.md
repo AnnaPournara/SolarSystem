@@ -32,7 +32,7 @@ After the code runs, a black window (SolarSystem) appears
       
 --SCREENSHOTS--  
 
-  (Solar System)  
+  (Solar System - For convenience the orbits are circular not elliptical)  
   
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/28d52cf0-e24c-4d1b-adb9-ad7e933b3769)
 
