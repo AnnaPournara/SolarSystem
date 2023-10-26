@@ -38,7 +38,7 @@ After the code runs, a black window (SolarSystem) appears
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/28d52cf0-e24c-4d1b-adb9-ad7e933b3769)
 
 
-  (Solar System inside room)  
+  (Solar System inside a room)  
   
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)
 
