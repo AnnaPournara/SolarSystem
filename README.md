@@ -29,4 +29,13 @@ After the code runs, a black window (SolarSystem) appears
 -> To change camera viewport press 'F1' or 'F2'
 
 
+
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/28d52cf0-e24c-4d1b-adb9-ad7e933b3769)
+
+
+![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)
+
+
+![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/2d769a1e-5f5d-4ba4-b120-1d345450dad7)
+
+
