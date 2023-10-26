@@ -39,7 +39,12 @@ After the code runs, a black window (SolarSystem) appears
 
   (Transfer Solar System inside a room to show the shadows)  
   
-![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)
+![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)  
+
+--VIDEO--  
+
+
+![anim](https://github.com/AnnaPournara/SolarSystem/assets/101518922/74b2fefc-a157-4afa-ae4d-5bc9ae465cc6)
 
 
   (Asteroids and their shadows)  
