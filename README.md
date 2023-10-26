@@ -13,17 +13,17 @@ INSTALLATION & BUILD
 5. Select 'Configure' and then 'Generate'
 6. Select 'Open Project'
 
-When project opens in Visual Studio <br />
+When project opens in Visual Studio  
 
 7. Go to 'Solution Explorer' Window
 8. Find the 'SolarSystem' project in 'Project' directory
 9. Right click and select 'Set as Startup Project'
 10. Open main.cpp and run the code (press the 'Local Windows Debugger' button OR CTRL + F5)
 
-After the code runs, a black window (SolarSystem) appears <br />
--> Press '1' to show the Solar System <br />
--> Press '2' to transfer the Solar System inside a room <br />
--> Press '3' to show the asteroids <br />
--> Press 'X' for Sun explosion (press it after pressing '1' or '2') <br />
--> To navigate use the keys W,A,S,D along with the mouse <br />
+After the code runs, a black window (SolarSystem) appears  
+-> Press '1' to show the Solar System  
+-> Press '2' to transfer the Solar System inside a room  
+-> Press '3' to show the asteroids  
+-> Press 'X' for Sun explosion (press it after pressing '1' or '2')  
+-> To navigate use the keys W,A,S,D along with the mouse  
 -> To change camera viewport press 'F1' or 'F2'
