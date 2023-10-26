@@ -1,0 +1,93 @@
+#version 330 core
+
+in vec3 vertex_position_worldspace;
+in vec3 vertex_position_cameraspace;
+in vec3 vertex_normal_cameraspace;
+in vec2 UV;
+           
+
+uniform samplerCube shadowMapSampler;
+uniform sampler2D textureSampler;
+
+uniform mat4 V;
+
+float farPlane = 100.0f;
+
+// Phong 
+// light properties
+struct Light {
+    vec4 La;
+    vec4 Ld;
+    vec4 Ls;
+    vec3 lightPosition_worldspace;
+    float power;
+};
+
+uniform Light light;
+
+out vec4 fragmentColor;
+
+void phong(float visibility);
+float ShadowCalculation(vec3 fragPosition);
+
+
+
+void main() {   
+    
+   float shadow  = ShadowCalculation(vertex_position_worldspace);
+   float visibility = 1.0f - shadow;
+    phong(visibility);
+}
+
+
+
+float ShadowCalculation(vec3 vertexPosition){
+    
+    float shadow;
+
+    // Take the difference vector between the fragment's position and the light's position 
+    vec3 fragToLight = vertexPosition - light.lightPosition_worldspace; 
+
+    // Use that vector as a direction vector to sample the cubemap
+    float closestDepth = texture(shadowMapSampler , fragToLight).r;
+
+    // It is currently in linear range between [0,1]. Re-transform back to original value
+    closestDepth *= farPlane;
+
+    // Get current linear depth as the length between the fragment and light position
+    float currentDepth = length(fragToLight); 
+
+    // Correcting the quantization problem
+    float bias = 0.1;
+
+    shadow = currentDepth - bias > closestDepth ? 1.0 : 0.0; 
+
+    return shadow;
+
+}
+
+
+void phong(float visibility) {
+   
+   vec4 main_texture = vec4(texture(textureSampler, UV).rgb, 1.0);
+   vec4 Ka = vec4(0.1, 0.1, 0.1, 1.0);
+   float Ns = 10;
+    
+    
+    // model ambient intensity (Ia)
+    vec4 Ia = light.La * Ka;
+
+    // model diffuse intensity (Id)
+    vec3 N = normalize(vertex_normal_cameraspace); 
+    vec3 L = normalize((V * vec4(light.lightPosition_worldspace, 1)).xyz - vertex_position_cameraspace);
+    float cosTheta = clamp(dot(L, N), 0, 1);
+    vec4 Id = light.Ld * cosTheta; 
+
+    //model the light distance effect
+    float distance = length(light.lightPosition_worldspace - vertex_position_worldspace);
+    float distance_sq = distance * distance;
+
+    // final fragment color
+    fragmentColor = vec4(main_texture * (Ia + visibility * Id * light.power / distance_sq));
+
+}

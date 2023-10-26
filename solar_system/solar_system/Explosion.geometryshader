@@ -1,0 +1,54 @@
+#version 330 core
+
+layout (triangles) in;
+layout (triangle_strip, max_vertices=3) out;
+
+in VS_OUT {
+    vec2 UV;
+} gs_in[];
+
+out vec2 UV;
+
+uniform float time;
+uniform vec3 jitter;
+
+
+vec4 explode(vec4 position, vec3 normal)
+{
+    float magnitude = 0.001;
+    vec3 direction = normal * exp(time) * magnitude; 
+    return position + vec4(direction, 0.0);
+}
+
+/*vec4 scale(vec4 position, vec4 barycenter, float l){
+    return position + (position - barycenter) * l;
+}*/
+
+vec3 GetNormal()
+{
+    vec3 a = vec3(gl_in[0].gl_Position) - vec3(gl_in[1].gl_Position);
+    vec3 b = vec3(gl_in[2].gl_Position) - vec3(gl_in[1].gl_Position);
+    return normalize(cross(a, b));
+}
+
+void main()
+{
+    float mu = 10*exp(2-time);
+    vec3 normal = GetNormal() + normalize(jitter) * mu;
+    //vec4 barycenter = (gl_in[0].gl_Position + gl_in[1].gl_Position + gl_in[2].gl_Position) / 3;
+    //float lambda = 0.5;
+
+    gl_Position = explode(gl_in[0].gl_Position, normal);
+    //gl_Position = scale(gl_Position, barycenter, lambda);
+    UV = gs_in[0].UV;
+    EmitVertex();
+    gl_Position = explode(gl_in[1].gl_Position, normal);
+    //gl_Position = scale(gl_Position, barycenter, lambda);
+    UV = gs_in[1].UV;
+    EmitVertex();
+    gl_Position = explode(gl_in[2].gl_Position, normal);
+    //gl_Position = scale(gl_Position, barycenter, lambda);
+    UV = gs_in[2].UV;
+    EmitVertex();
+    EndPrimitive();
+} 
