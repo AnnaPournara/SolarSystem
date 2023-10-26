@@ -13,7 +13,7 @@ INSTALLATION & BUILD
 5. Select 'Configure' and then 'Generate'
 6. Select 'Open Project'
 
-When project opens in Visual Studio
+When project opens in Visual Studio <br />
 
 7. Go to 'Solution Explorer' Window
 8. Find the 'SolarSystem' project in 'Project' directory
