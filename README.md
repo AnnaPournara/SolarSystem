@@ -41,14 +41,15 @@ After the code runs, a black window (SolarSystem) appears
   
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)  
 
+
+  (Asteroids and their shadows)  
+  
+![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/2d769a1e-5f5d-4ba4-b120-1d345450dad7)  
+
+
 --VIDEO--  
 
 
 ![anim](https://github.com/AnnaPournara/SolarSystem/assets/101518922/74b2fefc-a157-4afa-ae4d-5bc9ae465cc6)
-
-
-  (Asteroids and their shadows)  
-  
-![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/2d769a1e-5f5d-4ba4-b120-1d345450dad7)
 
 
