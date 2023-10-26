@@ -30,7 +30,7 @@ After the code runs, a black window (SolarSystem) appears
 
 
       
---SCREENSHOTS--  
+
 
   (Solar System - For convenience the orbits are circular not elliptical)  
   
@@ -47,7 +47,7 @@ After the code runs, a black window (SolarSystem) appears
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/2d769a1e-5f5d-4ba4-b120-1d345450dad7)  
 
 
---VIDEO--  
+  (Short clip of the motion of Solar System)  
 
 
 ![anim](https://github.com/AnnaPournara/SolarSystem/assets/101518922/74b2fefc-a157-4afa-ae4d-5bc9ae465cc6)
