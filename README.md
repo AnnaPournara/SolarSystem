@@ -27,15 +27,22 @@ After the code runs, a black window (SolarSystem) appears
 -> Press 'X' for Sun explosion (press it after pressing '1' or '2')  
 -> To navigate use the keys W,A,S,D along with the mouse  
 -> To change camera viewport press 'F1' or 'F2'
+  
+   
+--SCREENSHOTS--  
 
-
-
+  (Solar System)  
+  
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/28d52cf0-e24c-4d1b-adb9-ad7e933b3769)
 
 
+  (Solar System inside room)  
+  
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/31821b7d-5577-42eb-81d4-20f73e9fb997)
 
 
+  (Asteroids)  
+  
 ![image](https://github.com/AnnaPournara/SolarSystem/assets/101518922/2d769a1e-5f5d-4ba4-b120-1d345450dad7)
 
 
