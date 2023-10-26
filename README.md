@@ -4,7 +4,7 @@ Modeling and representation of Solar System using OpenGL
 
 INSTALLATION & BUILD
 
---To build the project Visual Studio and CMAKE tool is needed--
+--To build the project, Visual Studio and CMAKE tool is needed--
 
 1. Clone repository (git clone)
 2. Open CMAKE
