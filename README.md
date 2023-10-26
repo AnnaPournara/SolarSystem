@@ -28,7 +28,9 @@ After the code runs, a black window (SolarSystem) appears
 -> To navigate use the keys W,A,S,D along with the mouse  
 -> To change camera viewport press 'F1' or 'F2'
   
-   
+
+
+       
 --SCREENSHOTS--  
 
   (Solar System)  
